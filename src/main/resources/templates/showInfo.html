@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowInfo</title>
+     <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>kodID</th>
+            <th>name</th>
+            <th>branch</th>
+            <th>email</th>
+            <th>dob</th>
+            <th>gender</th>
+        </tr>
+        <tr>
+            <td th:text = "${student.kodID}"></td>
+            <td th:text = "${student.name}"></td>
+            <td th:text = "${student.branch}"></td>
+            <td th:text = "${student.email}"></td>
+            <td th:text = "${student.dob}"></td>
+            <td th:text = "${student.gender}"></td>
+        </tr>
+        
+    </table>
+</body>
+</html>
