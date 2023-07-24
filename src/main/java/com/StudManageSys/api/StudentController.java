@@ -88,4 +88,8 @@ public class StudentController {
 	        return "remove";
 	        
 	    }
+	    @GetMapping("/showAllStudents")
+	    public String showAllStudents() {
+	        return "showAllStudents";
+	    }
 }
