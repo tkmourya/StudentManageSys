@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/StudmanageSys-0.0.1-SNAPSHOT.jar StudManageSys.jar
+COPY --from=build /target/StudManageSys.jar StudManageSys.jar
 EXPOSE 8087
 ENTRYPOINT [ "java","-jar","StudManageSys.jar" ]
