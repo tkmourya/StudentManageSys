@@ -20,6 +20,11 @@ public class StudentController {
 		this.ss = ss;
 	}
 
+	@GetMapping("/index")
+	    public String index() {
+	        return "index";
+	    }
+
 	 @GetMapping("/register")
 	    public String register() {
 	        return "register";
@@ -50,6 +55,11 @@ public class StudentController {
 	        return "showInfo";
 	    }
 
+		@GetMapping("/showAllStudents")
+	    public String showAllStudents() {
+	        return "showAllStudents";
+	    }
+
 	    @GetMapping("/getAllStudents")
 	    public String getAllStudents(Model model) {
 	    	try {
@@ -57,7 +67,7 @@ public class StudentController {
 	        model.addAttribute("students", students);
 	        return "showAllStudents";
 	    	}catch(Exception e) {
-	    		return "Empaty";
+	    		return "index";
 	    	}
 	    }
 	
@@ -88,8 +98,5 @@ public class StudentController {
 	        return "remove";
 	        
 	    }
-	    @GetMapping("/showAllStudents")
-	    public String showAllStudents() {
-	        return "showAllStudents";
-	    }
+	    
 }

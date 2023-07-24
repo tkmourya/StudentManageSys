@@ -39,7 +39,7 @@
             <th>dob</th>
             <th>gender</th>
         </tr>
-        <tr th:each="students : ${students}">
+        <tr th:each="student : ${students}">
             <td th:text="${student.kodID}"></td>
             <td th:text="${student.name}"></td>
             <td th:text="${student.branch}"></td>
