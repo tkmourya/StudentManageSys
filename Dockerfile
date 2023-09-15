@@ -1,4 +1,5 @@
 FROM eclipse-temurin:17-jdk-alpine AS build
+COPY . .
 
 
 FROM openjdk:17.0.1-jdk-slim
