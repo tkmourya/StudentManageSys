@@ -4,46 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://icon-library.com/images/78104-200_9445.png">
+    <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/navbar.css">
     <title>ViewInfo</title>
 
-    <style>
-      body {
-      background-color: lightblue;
-    }
-    fieldset {
-    	padding:30px;
-      background-color: rgb(205, 234, 250);
-    }
-    form {
-    	box-shadow: 10px 10px  rgb(201, 229, 240);
-      margin: auto;
-      padding: 35px;
-      width: 235px;
-      background-color: rgb(205, 234, 240);
-    }
-  
-  #sb ,button,a{
-    margin: 4px;
-    color: #fffc;
-    height: 30px;
-    border: 0;
-    background-color: rgb(36, 195, 39);
-    font-weight: 550;
-}
-
-div{
-    margin-top: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-  
-      
-  </style>
+    
 </head>
 <body>
-    <center><h1>View</h1></center>
+  <nav class="navbar" >
+    <a class="navbar" href="#">
+      <span> <img src="https://icon-library.com/images/78104-200_9445.png" >Unicorn©</span></span>
+    </a>
+     
+  <div>
+    <ul>
+      <li><a href="/register">Register</a></li>
+      <li><a href="/viewInfo">Viewinfo</a></li>
+      <li><a href="/updateInfo">Updateinfo</a></li>
+      <li><a href="/remove">Remove Student</a></li>
+      <li><a href="/getAllStudents"><b>all</b></a></li>
+      
+    </ul>
+  </div></nav>
+    
     <form action="/view" method="get">
+      <center><h1>View</h1></center>
         <fieldset>
           <legend>Accept Data</legend>
           <label for="kodID"> Student ID:</label>
@@ -52,8 +40,6 @@ div{
           <input type="submit" value="Fetch Detail" id="sb"/>
         </fieldset>
       </form>
-      <div>
-        <button><a href="/">< back to Home</a></button>
-        </div>
+      
 </body>
 </html>

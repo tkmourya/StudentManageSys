@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  body {
+      background-color: #e3f2fd;
+      background-image: url("https://images.business.com/app/uploads/2012/02/14082113/production-management.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+        background-position:0cap ; 
+    }
+
+   h1, h2{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+
+      th, td {
+        color: #116D6E ;
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      tr:nth-child(even) {
+          background-color: #e3f2fd;
+      }
+
+      th {
+          background-color: #4CAF50;
+          color: white;
+      }

@@ -1,0 +1,46 @@
+.navbar{
+    background-color: #e3f2fd;
+    
+}
+span{
+    color: #116D6E;
+}
+
+ img{
+    width: 45px;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+ 
+  nav li a {
+    
+    display: inline-flex;
+    color: black;
+    text-align:left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  nav span {
+ 
+    font-weight: 800;
+    font-size:x-large;
+  }
+
+  /* Change the link color on hover */
+  li a:hover {
+    text-decoration: none;
+    
+    color: #116D6E;
+}
+li {
+    float:left;
+    position: relative;
+  }
