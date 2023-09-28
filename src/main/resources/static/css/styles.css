@@ -9,7 +9,7 @@
 
 body {
   background-color: #e3f2fd;
-  background-image: url("/src/main/resources/static/images/background_img.png");
+  background-image: url(../images/background_img.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -105,16 +105,15 @@ button:hover{
       border-collapse: collapse;
   }
 
-  th {
+  th,td{
       color: #116D6E ;
       padding: 8px;
       text-align: left;
       border-bottom: 1px solid #ddd;
-  }
-
-  tr:nth-child(even) {
       background-color: #e3f2fd;
   }
+
+ 
 
   th {
       text-transform: capitalize;
