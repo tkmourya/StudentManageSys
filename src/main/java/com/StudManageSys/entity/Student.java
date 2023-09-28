@@ -8,12 +8,12 @@ import jakarta.persistence.Table;
 @Table(name="Studenttt")
 public class Student {
 	@Id
-	String kodID;
-	String name;
-	String branch;
-	String email;
-	String dob;
-	String gender;
+	private String kodID;
+	private String name;
+	private String branch;
+	private String email;
+	private String dob;
+	private String gender;
 public Student() {
 	super();
 	// TODO Auto-generated constructor stub

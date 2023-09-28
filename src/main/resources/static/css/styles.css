@@ -1,3 +1,5 @@
+/*universal css or all pages css apply*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,41 +8,117 @@
 
 
 body {
-    background-color: #e3f2fd;
-    background-image: url("https://images.business.com/app/uploads/2012/02/14082113/production-management.png");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-attachment: fixed;
-      background-position:0cap ; 
-  }
- 
-  form{
-    text-align: center;
-    margin: auto;
-    padding: 35px;
-    width: auto;
-    background-color: transparent;
-  }
-  input{
-    color: #8e3216;
-    background-color: #e3f2fd;
-    border: 0;
-    outline: 0;
-    
-    border-radius:5px;
-    border-bottom: 1px solid #060606;
-    
-    
-  }
+  background-color: #e3f2fd;
+  background-image: url("/src/main/resources/static/images/background_img.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position:0cap ; 
+}
 
-   #sb{
-    height: 40px;
-    width: 150px;
-    color:#fffc;
-    background-color: #0961b4;
-    font-weight: 550;
-  }
-  
+form{
+margin-top: 20px !important;
+text-align: center;
+margin: auto;
+padding: 35px;
+width: auto;
+background-color: transparent;
+font-weight: 600;
+}
+
+label{
+font-weight: 500;
+}
+
+input{
+font-weight: 500;
+color: #1a8182;
+background-color: #e3f2fd;
+border: 0;
+outline: 0;
+
+border-radius:5px;
+border-bottom: 1px solid #060606;
+
+
+}
+
+/*button style*/
+#sb{
+height: 40px;
+width: 150px;
+color:#ffffffde;
+background-color: #0961b4;
+font-weight: 550;
+}
+
+
 #sb:hover{
   background-color: #1a8182;
 }
+
+.home-bt{
+  margin-top: 30px;
+  text-align: center;
+}
+
+button{
+  height: 40px;
+  width: 150px;
+  background-color: #0961b4;
+  font-weight: 550;
+  border: 0;
+  outline: 0;
+  border-radius:5px;
+  border-bottom: 1px solid #060606;
+}
+
+button a {
+ color:#fff !important;
+}
+
+button:hover{
+  background-color: #1a8182;
+}
+
+/*home page heading style*/
+.h2{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.h6{
+  color: #116D6E;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+/*table style css*/
+    h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  th {
+      color: #116D6E ;
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+
+  tr:nth-child(even) {
+      background-color: #e3f2fd;
+  }
+
+  th {
+      text-transform: capitalize;
+      background-color: #116D6E;
+      color: white;
+  }
+  
