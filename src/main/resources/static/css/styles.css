@@ -6,118 +6,127 @@
   margin: 0;
 }
 
-
 body {
   background-color: #e3f2fd;
   background-image: url(../images/background_img.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
-  background-position:0cap ; 
+  background-position: 0cap;
 }
 
-form{
-margin-top: 20px !important;
-text-align: center;
-margin: auto;
-padding: 35px;
-width: auto;
-background-color: transparent;
-font-weight: 600;
+form {
+  margin-top: 20px !important;
+  text-align: center;
+  margin: auto;
+  padding: 35px;
+  width: auto;
+  background-color: transparent;
+  font-weight: 600;
 }
 
-label{
-font-weight: 500;
+label {
+  font-weight: 500;
 }
 
-input{
-font-weight: 500;
-color: #1a8182;
-background-color: #e3f2fd;
-border: 0;
-outline: 0;
+input {
+  font-weight: 500;
+  color: #1a8182;
+  background-color: #e3f2fd;
+  border: 0;
+  outline: 0;
 
-border-radius:5px;
-border-bottom: 1px solid #060606;
+  border-radius: 5px;
+  border-bottom: 1px solid #060606;
+}
 
-
+/* Style for the success message */
+#success-message {
+  display: none;
+  color: #000; /* Deep black color */
+  font-weight: bold; /* Bold text */
 }
 
 /*button style*/
-#sb{
-height: 40px;
-width: 150px;
-color:#ffffffde;
-background-color: #0961b4;
-font-weight: 550;
+#sb {
+  height: 40px;
+  width: 150px;
+  color: #ffffffde;
+  background-color: #0961b4;
+  font-weight: 550;
 }
 
-
-#sb:hover{
+#sb:hover {
   background-color: #1a8182;
 }
 
-.home-bt{
+.home-bt {
   margin-top: 30px;
   text-align: center;
 }
 
-button{
+button {
   height: 40px;
   width: 150px;
   background-color: #0961b4;
   font-weight: 550;
   border: 0;
   outline: 0;
-  border-radius:5px;
+  border-radius: 5px;
   border-bottom: 1px solid #060606;
 }
 
 button a {
- color:#fff !important;
+  color: #fff !important;
 }
 
-button:hover{
+button:hover {
   background-color: #1a8182;
 }
 
 /*home page heading style*/
-.h2{
+.h2 {
   margin-top: 70px;
   text-align: center;
 }
 
-.h6{
-  color: #116D6E;
+.h6 {
+  color: #116d6e;
   width: 50%;
   margin: auto;
   text-align: center;
 }
 
 /*table style css*/
-    h2 {
-            margin-bottom: 15px;
-            text-align: center;
-        }
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
 
-  table {
-      width: 100%;
-      border-collapse: collapse;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  th,td{
-      color: #116D6E ;
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-      background-color: #e3f2fd;
-  }
+th,
+td {
+  color: #116d6e;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: #e3f2fd;
+}
 
- 
+th {
+  text-transform: capitalize;
+  background-color: #116d6e;
+  color: white;
+}
 
-  th {
-      text-transform: capitalize;
-      background-color: #116D6E;
-      color: white;
-  }
+.item p {
+  text-align: center;
   
+  color: #116d6e;
+  font-size: large;
+  font-weight: 500;
+}

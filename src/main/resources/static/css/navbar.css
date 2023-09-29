@@ -4,20 +4,29 @@
   margin: 0;
 }
 
-nav{
-    background-color: #e3f2fd;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+/* Add this CSS to make the navigation bar fixed */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Adjust the z-index as needed */
+  background-color: #e3f2fd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s; /* Add smooth transition for hiding/showing the navbar */
 }
 
-.navbar-toggler{
-  color: #116D6E !important;
-  background-color: transparent !important;
+/* Add this CSS to create space for the fixed navigation bar */
+body {
+  padding-top: 70px; /* Adjust the value to match the height of your navigation bar */
 }
 
-/* Custom CSS to remove the border and outline around the toggler icon */
+/* Add this CSS to style the toggler button */
 .navbar-toggler {
-  border: none; /* Remove the border */
-  outline: none; /* Remove the outline when focused */
+  color: #116d6e !important;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
 }
 
 /* Style for the toggler when it's active (clicked) */
@@ -26,48 +35,41 @@ nav{
   outline: none; /* Remove the outline on focus */
 }
 
-/* .nav-link:hover{
-  color: #116D6E !important;
-} */
-
-span{
-    color: #116D6E;
+span {
+  color: #116d6e;
 }
 
- img{
-    width: 45px;
-    
+img {
+  width: 45px;
 }
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
- 
-  nav li a {
-    
-    display: inline-flex;
-    color: black;
-    text-align:left;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-weight: 500;
-  }
+nav li a {
+  display: inline-flex;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-  nav span {
- 
-    font-weight: 800;
-    font-size:x-large;
-  }
+nav span {
+  font-weight: 800;
+  font-size: x-large;
+}
 
-  /*Change the link color on hover */
-  li a, a:hover {
-    text-decoration: none;
-    color: #116D6E;
+/*Change the link color on hover */
+li a,
+a:hover {
+  text-decoration: none;
+  color: #116d6e;
 }
 li {
-    float:left;
-    position: relative;
-  }
+  float: left;
+  position: relative;
+}

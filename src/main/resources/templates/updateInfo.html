@@ -46,6 +46,11 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
     
     <form action="/updateStudent" method="post">
     <input type="hidden" name="_method" value="put">
+
+    <div class="item" id="Item">
+      <p th:if="${result1}">[[${result1}]]</p>
+    </div>
+    
     <center><h1>Update</h1></center>
       <fieldset>
         <legend>Accept Data</legend>
@@ -70,6 +75,8 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
         <input type="submit" value="Update Student" id="sb"/>
       </fieldset>
     </form>
+
+    <script th:src="@{/javascript/script.js}"></script>
     <!-- Add Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
