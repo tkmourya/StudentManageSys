@@ -7,7 +7,7 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/main/resources/static/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" th:href="@{/images/unicoren logo.png}" href="/src/main/resources/static/images/unicoren logo.png">
+    <link rel="icon" type="image/x-icon" th:href="@{/images/logoub.svg}" href="/src/main/resources/static/images/logoub.svg">
     <link rel="stylesheet" th:href="@{/css/styles.css}"  href="/src/main/resources/static/css/styles.css">
     <link rel="stylesheet" th:href="@{/css/navbar.css}" href="/src/main/resources/static/css/navbar.css">
     <title>ViewInfo</title>
@@ -16,8 +16,8 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar" href="#">
-        <span><img th:src="@{/images/unicoren logo.png}" src="/src/main/resources/static/images/unicoren logo.png" alt="Unicorn Logo"> Unicorn©</span>
+    <a class="navbar" href="/home">
+        <span><img th:src="@{/images/logoub.svg}" src="/src/main/resources/static/images/logoub.svg" alt=" Logo"> Ubuildo</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +29,13 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                 <a class="nav-link" href="/register">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/viewInfo">Viewinfo</a>
+                <a class="nav-link" href="/viewInfo">View</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/updateInfo">Updateinfo</a>
+                <a class="nav-link" href="/updateInfo">Update</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/remove">Remove Student</a>
+                <a class="nav-link" href="/remove">Remove</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/getAllStudents"><b>all</b></a>
@@ -48,7 +48,7 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
       <center><h1>View</h1></center>
         <fieldset>
           <legend>Accept Data</legend>
-          <label for="kodID"> Student ID:</label>
+          <label for="kodID"> Unique ID:</label>
           <input type="text" id="id" name="kodID" required /><br /><br />
   
           <input type="submit" value="Fetch Detail" id="sb"/>

@@ -20,9 +20,10 @@ public class StudentController {
 		this.ss = ss;
 	}
 
-	@GetMapping("/index")
-	    public String index() {
-	        return "index";
+
+		@GetMapping("/home")
+	    public String home() {
+	        return "home";
 	    }
 
 	 @GetMapping("/register")
@@ -94,7 +95,7 @@ public class StudentController {
 	        return "showAllStudents";
 	    	}catch(Exception e) {
 	    		System.out.println("Not available database");
-	    		return "index";
+	    		return "home";
 	    	}
 	    }
 	
