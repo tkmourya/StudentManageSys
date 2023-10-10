@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins' ;
 }
 
 /* Add this CSS to make the navigation bar fixed */
@@ -12,23 +10,15 @@ nav.navbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; 
-  background-color: transparent;
+  z-index: 1000; /* Adjust the z-index as needed */
+  background-color: #e3f2fd;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: top 0.3s; 
+  transition: top 0.3s; /* Add smooth transition for hiding/showing the navbar */
 }
 
-
+/* Add this CSS to create space for the fixed navigation bar */
 body {
-  padding-top: 70px; 
-}
-
-.navbar img{
-  margin-right:6px;
-}
-a.navbar span{
-  display: flex;
-  justify-content:center; 
+  padding-top: 70px; /* Adjust the value to match the height of your navigation bar */
 }
 
 /* Add this CSS to style the toggler button */
@@ -37,24 +27,20 @@ a.navbar span{
   background-color: transparent !important;
   border: none;
   outline: none;
-  
 }
 
-
+/* Style for the toggler when it's active (clicked) */
 .navbar-toggler:focus {
-  border: none; 
-  outline: none; 
+  border: none; /* Remove the border on focus */
+  outline: none; /* Remove the outline on focus */
 }
 
 span {
-  
-  color: #0f6c4e;
-  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  color: #116d6e;
 }
 
 img {
-  width: 32px;
-  
+  width: 45px;
 }
 nav ul {
   list-style-type: none;
@@ -78,16 +64,12 @@ nav span {
 }
 
 /*Change the link color on hover */
- 
-li a:hover {
+li a,
+a:hover {
   text-decoration: none;
-  color: #0f6c4e;
-  scale: calc(1.1);
-  font-weight: 600;
-  
+  color: #116d6e;
 }
 li {
-  display:inline-block;
+  float: left;
   position: relative;
-  
 }

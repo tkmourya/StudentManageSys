@@ -1,20 +1,18 @@
 /*universal css or all pages css apply*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins' ;
-  
 }
 
 body {
-  background-color: #fff;
-  background-image: url(https://eehhaaa.com/about/assets/top_corner.png);
+  background-color: #e3f2fd;
+  background-image: url(../images/background_img.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  
-  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: 0cap;
 }
 
 form {
@@ -32,14 +30,14 @@ label {
 }
 
 input {
-  font-weight: 400;
-  color: #115757;
-  background-color: transparent;
+  font-weight: 500;
+  color: #1a8182;
+  background-color: #e3f2fd;
   border: 0;
   outline: 0;
 
-  border-radius: 0px;
-  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  border-bottom: 1px solid #060606;
 }
 
 /* Style for the success message */
@@ -51,17 +49,15 @@ input {
 
 /*button style*/
 #sb {
-  height: 46px;
+  height: 40px;
   width: 150px;
   color: #ffffffde;
-  background-color: #12976d;
-  font-size: small;
-  border-radius: 4px;
-  border:0;
+  background-color: #0961b4;
+  font-weight: 550;
 }
 
 #sb:hover {
-  background-color: #18b382;
+  background-color: #1a8182;
 }
 
 .home-bt {
@@ -70,58 +66,39 @@ input {
 }
 
 button {
-  height: 46px;
+  height: 40px;
   width: 150px;
-  background-color: #12976d;
-  border:0;
+  background-color: #0961b4;
+  font-weight: 550;
+  border: 0;
   outline: 0;
-  border-radius: 4px;
-  
+  border-radius: 5px;
+  border-bottom: 1px solid #060606;
 }
 
 button a {
   color: #fff !important;
-  font-size: small;
 }
 
 button:hover {
-  background-color: #18b382;
-}
-
-h1{
-	margin-top:12px;
-	font-variant: small-caps;
-}
-
-legend{
-	font-variant: small-caps;
+  background-color: #1a8182;
 }
 
 /*home page heading style*/
 .h2 {
- font-variant:small-caps;
   margin-top: 70px;
   text-align: center;
-  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .h6 {
-  font-family:monospace;
-  color: #000;
-  opacity:0.5;
+  color: #116d6e;
   width: 50%;
   margin: auto;
   text-align: center;
-  
-  
 }
-
-
 
 /*table style css*/
 h2 {
-  font-variant:small-caps;
-  margin-top:40px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -136,8 +113,8 @@ td {
   color: #116d6e;
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #c2c2c2;
-  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  background-color: #e3f2fd;
 }
 
 th {
