@@ -14,12 +14,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      th:href="@{/images/unicoren logo.png}"
-      href="/src/main/resources/static/images/unicoren logo.png"
-    />
+    <link rel="icon" type="image/x-icon" th:href="@{/images/logoub.svg}" href="/src/main/resources/static/images/logoub.svg">
     <link
       rel="stylesheet"
       th:href="@{/css/styles.css}"
@@ -36,15 +31,8 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar" href="/index">
-        <span
-          ><img
-            th:src="@{/images/unicoren logo.png}"
-            src="/src/main/resources/static/images/unicoren logo.png"
-            alt="Unicorn Logo"
-          />
-          Unicorn©</span
-        >
+      <a class="navbar" href="/home">
+        <span><img th:src="@{/images/logoub.svg}" src="/src/main/resources/static/images/logoub.svg" width="32px" alt=" Logo"> Ubuildo</span>
       </a>
       <button
         class="navbar-toggler"
@@ -63,13 +51,13 @@
             <a class="nav-link" href="/register">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/viewInfo">Viewinfo</a>
+            <a class="nav-link" href="/viewInfo">View</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/updateInfo">Updateinfo</a>
+            <a class="nav-link" href="/updateInfo">Update</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/remove">Remove Student</a>
+            <a class="nav-link" href="/remove">Remove</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/getAllStudents"><b>all</b></a>
@@ -79,7 +67,6 @@
     </nav>
 
     <form action="addStudent" method="post">
-      
       <div class="item" id="Item">
         <p th:if="${result}">[[${result}]]</p>
       </div>

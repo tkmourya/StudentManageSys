@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins' ;
+}
+
+/* Add this CSS to make the navigation bar fixed */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  background-color: transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s; 
+}
+
+
+body {
+  padding-top: 70px; 
+}
+
+.navbar img{
+  margin-right:6px;
+}
+a.navbar span{
+  display: flex;
+  justify-content:center; 
+}
+
+/* Add this CSS to style the toggler button */
+.navbar-toggler {
+  color: #116d6e !important;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  
+}
+
+
+.navbar-toggler:focus {
+  border: none; 
+  outline: none; 
+}
+
+span {
+  
+  color: #0f6c4e;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 32px;
+  
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li a {
+  display: inline-flex;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav span {
+  font-weight: 800;
+  font-size: x-large;
+}
+
+/*Change the link color on hover */
+ 
+li a:hover {
+  text-decoration: none;
+  color: #0f6c4e;
+  scale: calc(1.1);
+  font-weight: 600;
+  
+}
+li {
+  display:inline-block;
+  position: relative;
+  
+}

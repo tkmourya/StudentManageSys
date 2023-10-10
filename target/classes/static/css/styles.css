@@ -1,0 +1,155 @@
+/*universal css or all pages css apply*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins' ;
+  
+}
+
+body {
+  background-color: #fff;
+  background-image: url(https://eehhaaa.com/about/assets/top_corner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-position: center;
+}
+
+form {
+  margin-top: 20px !important;
+  text-align: center;
+  margin: auto;
+  padding: 35px;
+  width: auto;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  font-weight: 400;
+  color: #115757;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  border-radius: 0px;
+  border-bottom: 1px solid #000;
+}
+
+/* Style for the success message */
+#success-message {
+  display: none;
+  color: #000; /* Deep black color */
+  font-weight: bold; /* Bold text */
+}
+
+/*button style*/
+#sb {
+  height: 46px;
+  width: 150px;
+  color: #ffffffde;
+  background-color: #12976d;
+  font-size: small;
+  border-radius: 4px;
+  border:0;
+}
+
+#sb:hover {
+  background-color: #18b382;
+}
+
+.home-bt {
+  margin-top: 30px;
+  text-align: center;
+}
+
+button {
+  height: 46px;
+  width: 150px;
+  background-color: #12976d;
+  border:0;
+  outline: 0;
+  border-radius: 4px;
+  
+}
+
+button a {
+  color: #fff !important;
+  font-size: small;
+}
+
+button:hover {
+  background-color: #18b382;
+}
+
+h1{
+	margin-top:12px;
+	font-variant: small-caps;
+}
+
+legend{
+	font-variant: small-caps;
+}
+
+/*home page heading style*/
+.h2 {
+ font-variant:small-caps;
+  margin-top: 70px;
+  text-align: center;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.h6 {
+  font-family:monospace;
+  color: #000;
+  opacity:0.5;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  
+  
+}
+
+
+
+/*table style css*/
+h2 {
+  font-variant:small-caps;
+  margin-top:40px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  color: #116d6e;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #c2c2c2;
+  background-color: #fff;
+}
+
+th {
+  text-transform: capitalize;
+  background-color: #116d6e;
+  color: white;
+}
+
+.item p {
+  text-align: center;
+  
+  color: #116d6e;
+  font-size: large;
+  font-weight: 500;
+}
