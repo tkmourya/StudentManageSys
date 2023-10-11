@@ -76,6 +76,9 @@ nav span {
   font-weight: 800;
   font-size: x-large;
 }
+nav a:hover{
+	 text-decoration: none;
+}
 
 /*Change the link color on hover */
  

@@ -10,7 +10,7 @@
 
 body {
   background-color: #fff;
-  background-image: url(https://eehhaaa.com/about/assets/top_corner.png);
+  background-image: url(../images/pattern00.png);
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -50,7 +50,7 @@ input {
 }
 
 /*button style*/
-#sb {
+.home-bt a, #sb {
   height: 46px;
   width: 150px;
   color: #ffffffde;
@@ -60,33 +60,31 @@ input {
   border:0;
 }
 
-#sb:hover {
+.home-bt #sb:hover ,#sb:hover {
   background-color: #18b382;
 }
 
-.home-bt {
-  margin-top: 30px;
-  text-align: center;
+.home-bt{
+	margin-top:46px;
+	text-align: center;
+	
 }
 
-button {
-  height: 46px;
-  width: 150px;
+.home-bt #sb {
+  padding:15px 40px;
+  color: #fff;
   background-color: #12976d;
-  border:0;
-  outline: 0;
-  border-radius: 4px;
   
+  border-radius: 4px;
+  text-decoration: none;
+ 
 }
 
-button a {
-  color: #fff !important;
-  font-size: small;
-}
 
-button:hover {
-  background-color: #18b382;
-}
+
+
+
+
 
 h1{
 	margin-top:12px;

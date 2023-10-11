@@ -67,8 +67,10 @@ public class AdminController {
          adminServices.addUsers(admin);
         
          System.out.println(admin);
+         String result = adminServices.addSuccess();
+	        model.addAttribute("result",result);
          System.out.println("user added successfully!");
-         return "redirect:/signin";
+         return "/signup";
          }
          else {
          	String result = adminServices.addExists();

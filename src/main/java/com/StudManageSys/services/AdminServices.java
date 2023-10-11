@@ -8,12 +8,14 @@ import com.StudManageSys.repository.AdminRepository;
 
 public interface AdminServices {
 	String addUsers(Admin admin);// add user in database
+	String addSuccess();
 	boolean checkEmail(String email); //check email already exist in database or not
 	String addExists(); // print exist or not on web page(Register)
 	String loginExists();//print exist or not on web page(Login)
 	boolean validate(String email, String password); // validation (login)
 	boolean adminValidate(String email, String password);
 	String getAdminEmail(String email);
+	
 	
 
 }
@@ -33,6 +35,11 @@ class AdminServicesImplementation implements AdminServices{
             return "Error occurred while Registration";
         }
 	}
+	
+	@Override
+	public String addSuccess() {
+		return " Application Success !";
+	}
 
 	@Override
 	public boolean checkEmail(String email) {
@@ -41,7 +48,7 @@ class AdminServicesImplementation implements AdminServices{
 
 	@Override
 	public String addExists() {
-		return "Already Exista !";
+		return "Already Exists !";
 	}
 
 	@Override
@@ -88,5 +95,7 @@ class AdminServicesImplementation implements AdminServices{
 		Admin a=adminRepository.getByEmail(email);
 		return a.getEmail();
 	}
+
+	
 	
 }
