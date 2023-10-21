@@ -18,35 +18,7 @@ public class AdminController {
 	@Autowired
 	AdminServices adminServices;
 	
-	@GetMapping("/index")
-    public String index() {
-        return "index";
-    }
 	
-	@GetMapping("/about")
-    public String about() {
-        return "about";
-    }
-	
-	@GetMapping("/alertsignup")
-    public String alertsignup() {
-        return "alertsignup";
-    }
-	
-	@GetMapping("/adminlogin")
-    public String adminlogin() {
-        return "adminlogin";
-    }
-	
-	@GetMapping("/signin")
-	public String signin() {
-    return "signin";
-	}
-    
-    @GetMapping("/signup")
-	public String signup() {
-    return "signup";
-}
     
  // Register
  	@PostMapping("/addUsers")
@@ -70,13 +42,13 @@ public class AdminController {
          String result = adminServices.addSuccess();
 	        model.addAttribute("result",result);
          System.out.println("user added successfully!");
-         return "/signup";
+         return "signup";
          }
          else {
          	String result = adminServices.addExists();
              model.addAttribute("result", result);
          	System.out.println("user already exists!");
-         	return "/signup";
+         	return "signup";
          }
      }
  	
@@ -91,19 +63,19 @@ public class AdminController {
  		if(val==true){
  			
  			System.out.println("login successfull!");
- 			return "/home";
+ 			return "home";
  			}
  		else {
  			String result = adminServices.loginExists();
              model.addAttribute("result", result);
  			System.out.println("incorrect credentials, try again!");
- 			return "/signin";
+ 			return "signin";
  		}
  		
  	}else {
  		String result = adminServices.loginExists();
         model.addAttribute("result", result);
- 			return "/signin";
+ 			return "signin";
  		}
  	}
 
@@ -118,13 +90,13 @@ public class AdminController {
 		if(val==true){
 			if(adminServices.getAdminEmail(email).equals("dev_tk@ubuildo.com")) {
 				System.out.println("admin_login successfull!");
-			return "/signup";
+			return "signup";
 			}
 			else {
 				String result = adminServices.loginExists();
 		         model.addAttribute("result", result);
 					System.out.println("incorrect credentials, try again!");
-					return "/adminlogin";
+					return "adminlogin";
 			}
 			
 			}
@@ -132,13 +104,13 @@ public class AdminController {
 			String result = adminServices.loginExists();
          model.addAttribute("result", result);
 			System.out.println("incorrect credentials, try again!");
-			return "/adminlogin";
+			return "adminlogin";
 		}
 		
 	}else {
 		String result = adminServices.loginExists();
     model.addAttribute("result", result);
-			return "/adminlogin";
+			return "adminlogin";
 		}
 	}
 }

@@ -21,15 +21,6 @@ public class StudentController {
 	}
 
 
-		@GetMapping("/home")
-	    public String home() {
-	        return "home";
-	    }
-
-	 @GetMapping("/register")
-	    public String register() {
-	        return "register";
-	    }
 
 	    @PostMapping("/addStudent")
 	    public String addStudent(@RequestParam("kodID") String kodID,
@@ -64,10 +55,7 @@ public class StudentController {
 	    }
 	    
 
-	    @GetMapping("/viewInfo")
-	    public String viewInfo() {
-	        return "viewInfo";
-	    }
+	   
 	
 
 	    @GetMapping("/view")
@@ -82,10 +70,7 @@ public class StudentController {
 	    	}
 	    }
 
-		@GetMapping("/showAllStudents")
-	    public String showAllStudents() {
-	        return "showAllStudents";
-	    }
+		
 
 	    @GetMapping("/getAllStudents")
 	    public String getAllStudents(Model model) {
@@ -99,10 +84,7 @@ public class StudentController {
 	    	}
 	    }
 	
-	    @GetMapping("/updateInfo")
-	    public String updateInfo() {
-	        return "updateInfo";
-	    }
+	   
 
 	    @PostMapping("/updateStudent")
 	    public String updateStudent(@RequestParam("kodID") String kodID,
@@ -127,10 +109,7 @@ public class StudentController {
 	        
 	        
 	    }	
-	    @GetMapping("/remove")
-	    public String removeStudent() {
-	        return "remove";
-	    }
+	   
 
 	    @PostMapping("/deleteStudent")
 	    public String deleteStudent(@RequestParam("kodID") String kodID, Model model) {
