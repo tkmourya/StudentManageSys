@@ -11,6 +11,8 @@
 * Delete Details (New)
 
 ## Preview
+* Video Link
+https://www.linkedin.com/posts/tarunkumarmourya_aws-elasticbeanstalk-webdevelopment-activity-7119387099555897345-AsnH?utm_source=share&utm_medium=member_desktop
 
 ![Screenshot 2023-11-01 231927](https://github.com/tkmourya/StudentManageSys/assets/132468329/7f26efaf-f21d-46b3-835c-f6e5f8efacd2)
 
